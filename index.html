@@ -42,14 +42,17 @@
         </div>
 
         <div class="mb-5">
-            <label class="block mb-2 text-lg font-semibold text-gray-800">Password</label>
-            <input id="passwordInput" type="password text-gray-500" placeholder="Enter Password"
+            <label class="block mb-2 text-lg font-semibold text-gray-900">Password</label>
+            <input id="passwordInput" type="password" placeholder="Enter Password"
                 class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder-gray-400 text-gray-600">
             <p class="mt-1.5 text-sm text-purple-600 font-medium">Default: admin123</p>
         </div>
     </div>
 
     <div class="max-w-sm space-y-6 w-11/12 mx-auto pb-8">
+        <p id="errorMessage" class="mt-2 text-red-500 text-sm font-medium hidden ml-10">
+                  Wrong username or password!
+                </p>
         <button id="signInBtn" class=" btn w-full h-12 text-center cursor-pointer py-4 bg-[#5b00ff] text-white font-bold rounded-xl transition hover:bg-opacity-90">
             Sign In
         </button>
@@ -68,10 +71,6 @@
                 </p>
                 <p class="text-slate-700">
                     <span class="font-bold">Password:</span> admin123
-                </p>
-
-                <p id="errorMessage" class="mt-2 text-red-500 text-sm font-medium hidden">
-                  Wrong username or password!
                 </p>
             </div>
         </div>
